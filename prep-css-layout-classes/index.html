@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    img {
+      width: 299px;
+      height: 448px;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      align-items: center;
+    }
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+
+    }
+
+    .column {
+      flex-basis:calc(100%/3);
+      justify-content: space-around;
+      margin: 8px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Branden's Top Three Movies</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="	https://flxt.tmsimg.com/assets/p15829_p_v8_as.jpg" alt="Forest_Gump_Movie_Poster">
+        <h3>Forest Gump</h3>
+        <p>Forrest Gump, American film, released in 1994, that chronicled 30 years (from the 1950s through the early 1980s) of the
+          life of a intellectually disabled man (played by Tom Hanks) in an unlikely fable that earned critical praise, large
+          audiences, and six Academy Awards, including best picture.</p>
+      </div>
+      <div class="column">
+        <img src="https://i.ytimg.com/vi/OVTGHtHbG60/movieposter_en.jpg" alt="Good_Will_Hunting_Movie_Poster">
+        <h3>Will Hunting</h3>
+        <p>A touching tale of a wayward young man who struggles to find his identity, living in a world where he can solve any
+      problem, except the one brewing deep within himself, until one day he meets his soul mate who opens his mind and his
+      heart.
+        </p>
+      </div>
+      <div class="column">
+        <img src="	https://upload.wikimedia.org/wikipedia/commons/2/25/It%27s_a_Wonderful_Life_%281946_poster%29.jpeg" alt="It's_A_Wonderful_Life">
+        <h3>It's A Wonderful Life</h3>
+        <p>A young George Bailey, overwhelmed by family obligations and a sense of responsibility toward his community, feels tied
+      down to a company he never had an interest in working for, and a life he never wanted to live. As he ages, he sees his
+      youth, dreams and opportunities pass him by.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
